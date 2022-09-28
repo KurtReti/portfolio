@@ -7,7 +7,7 @@ type Props = {}
 
 export default function ({}: Props) {
   return (
-    <div className='h-screen flex flex-col  items-center justify-center text-center
+    <div className=' h-screen flex flex-col  items-center justify-center text-center
     overflow-hidden z-0'>
       <Background />
       
@@ -19,12 +19,12 @@ export default function ({}: Props) {
         opacity:1
       }}
       transition={{
-        delay:3,
+        delay:3.5,
         duration: 1.5
       }}>
       
-      <p className=' text-5xl relative text-white z-10'>Kurt Reti, Frontend Developer</p>
-      <div className='relative'>
+      <p className=' text-4xl -top-10 md:text-5xl self-center relative text-white z-10'>Kurt Reti <br></br> &lt;Frontend Developer /&gt; </p>
+      <div className='relative -top-10'>
         <Link href="#about">
         <button className="heroButton">About</button>
         </Link>
