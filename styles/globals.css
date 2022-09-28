@@ -4,6 +4,6 @@
 
 @layer components{
     .heroButton{
-        @apply px-5 mt-12 rounded-full text-white uppercase text-sm tracking-widest
+        @apply px-5 mt-12 rounded-full text-white uppercase text-sm tracking-widest hover:underline hover:underline-offset-8
     }
 }
