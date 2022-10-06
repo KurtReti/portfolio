@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import About from "../components/About";
 import Background from "../components/Background";
+import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -12,7 +13,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className="font-Josefin bg-zinc-900 text-zinc-400 h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className="font-Josefin bg-zinc-900 text-zinc-400 h-screen snap-y snap-mandatory scroll-smooth overflow-scroll z-0">
       <Head>
         <title>Kurt Reti</title>={" "}
         <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/216749490747473921/1024657787281752094/Screen_Shot_2022-09-28_at_10.23.55_pm.png" />
@@ -49,6 +50,9 @@ export default function Home() {
         <Projects />
       </section>
       {/* Contact */}
+      <section id="contact" className="snap-center">
+        <Contact />
+      </section>
     </div>
   );
 }
