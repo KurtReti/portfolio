@@ -20,7 +20,7 @@ export default function Experience({}: Props) {
         viewport={{
           once: true,
         }}
-        className="absolute top-24 uppercase tracking-[20px]"
+        className="absolute pl-4 md:pl-0 top-24 uppercase tracking-[20px]"
       >
         Experience
       </motion.h3>

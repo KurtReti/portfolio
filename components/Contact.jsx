@@ -66,9 +66,9 @@ export default function Contact({}) {
                 <input className="text-sm py-1 px-2 font-light bg-transparent border-b border-white " type="email" name="email" required/>
               </p>
             </div>
-            <div className="flex align space-y-4 md:space-y-0 flex-col  mt-4">
+            <div className="flex  align space-y-4 md:space-y-0 flex-col  mt-4">
               <label className="self-start uppercase font-light mb-0 md:mb-4 tracking-widest" htmlFor="message">Message</label>
-              <textarea className="px-2 py-2 text-sm bg-transparent font-light border  border-white w-full h-80 md:h-48 " name="message" required />
+              <textarea className="px-2 py-2 self-center text-sm bg-transparent font-light border  border-white w-[300px] h-80 md:h-48 " name="message" required />
        
             </div>
             <motion.button
@@ -78,7 +78,7 @@ export default function Contact({}) {
                 scaleX: 0.95
             }}
 
-            disabled={isSubmitting} className="border h-8 mt-4 md:mt-8 w-1/2 self-center border-white px-4 py-1 uppercase font-light"
+            disabled={isSubmitting} className="border  h-8 mt-4 md:mt-8 w-1/2 self-center border-white px-4 py-1 uppercase font-light"
             
             onClick={showAlert}>
               Submit
@@ -86,8 +86,8 @@ export default function Contact({}) {
             
           </form>
 
-          {isSubmitting && isAlertVisible && <div className='absolute bottom-12 md:bottom-32 '>
-              <div className='text-white flex gap-4 flex-row md:flex-col'>
+          {isSubmitting && isAlertVisible && <div className='p-10 absolute z-50 bottom-12 md:bottom-32 '>
+              <div className='bg-zinc-900 px-4 py-2 text-sm md:text-lg font-light border border-white  text-white flex gap-4 flex-row md:flex-col'>
                 <p>Message submitted.</p>
                 <p>I will be in touch soon!</p>
               </div>
