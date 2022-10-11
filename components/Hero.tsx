@@ -7,7 +7,7 @@ type Props = {}
 
 export default function Hero({}: Props) {
   return (
-    <div className=' h-screen flex flex-col  items-center justify-center text-center
+    <div className=' h-screen bg-zinc-900 flex flex-col  items-center justify-center text-center
     overflow-hidden z-0'>
       <Background />
       

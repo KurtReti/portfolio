@@ -5,7 +5,7 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen bg-zinc-900 flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
       <motion.h3
         initial={{
           opacity: 0,

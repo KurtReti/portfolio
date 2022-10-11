@@ -36,7 +36,7 @@ export default function Contact({}) {
   
     
   return (
-    <div className="h-screen flex text-white flex-col relative text-center md:text-left md:flex-row  px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen bg-zinc-900 flex text-white flex-col relative text-center md:text-left md:flex-row  px-10 justify-evenly mx-auto items-center">
       <motion.h3
         initial={{
           opacity: 0,

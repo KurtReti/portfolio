@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Experience({}: Props) {
   return (
-    <div className="h-screen flex flex-col overflow-hidden relative text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen flex bg-zinc-900 flex-col overflow-hidden relative text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <motion.h3
         initial={{
           opacity: 0,
