@@ -89,7 +89,7 @@ export default function Contact({}) {
           {isSubmitting && isAlertVisible && <div className='absolute bottom-12 md:bottom-32 '>
               <div className='text-white flex gap-4 flex-row md:flex-col'>
                 <p>Message submitted.</p>
-                <p>I'll be in touch soon!</p>
+                <p>I will be in touch soon!</p>
               </div>
           </div>}
 

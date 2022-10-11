@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 type Props = {}
 
-export default function ({}: Props) {
+export default function Hero({}: Props) {
   return (
     <div className=' h-screen flex flex-col  items-center justify-center text-center
     overflow-hidden z-0'>
