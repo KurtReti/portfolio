@@ -3,10 +3,17 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Background from './Background';
 
-type Props = {};
 
-export default function Contact({}: Props) {
+export default function Contact({}) {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [ isAlertVisible, setIsAlertVisible ] = React.useState(false);
+
+    const showAlert = () => {
+       setIsAlertVisible(true);
+       setTimeout(() => {
+                    setIsAlertVisible(false);
+                }, 3000);
+    }
     
 
   async function handleOnSubmit(e){
@@ -26,6 +33,7 @@ export default function Contact({}: Props) {
     
     console.log(formData);
   }
+  
     
   return (
     <div className="h-screen flex text-white flex-col relative text-center md:text-left md:flex-row  px-10 justify-evenly mx-auto items-center">
@@ -42,7 +50,7 @@ export default function Contact({}: Props) {
         viewport={{
             once: true
         }}
-        className="absolute top-28 text-neutral-900 xl:text-white z-10 uppercase tracking-[20px]"
+        className="absolute top-28 text-zinc-400 z-10 uppercase tracking-[20px]"
       >
         Contact Me
       </motion.h3>        
@@ -70,11 +78,21 @@ export default function Contact({}: Props) {
                 scaleX: 0.95
             }}
 
-            disabled={isSubmitting} className="border h-8 mt-8 w-1/2 self-center border-white px-4 py-1 uppercase font-light" >
+            disabled={isSubmitting} className="border h-8 mt-8 w-1/2 self-center border-white px-4 py-1 uppercase font-light"
+            
+            onClick={showAlert}>
               Submit
             </motion.button>
             
           </form>
+
+          {isSubmitting && isAlertVisible && <div className='absolute bottom-12 md:bottom-32 '>
+              <div className='text-white flex gap-4 flex-row md:flex-col'>
+                <p>Message submitted.</p>
+                <p>I'll be in touch soon!</p>
+              </div>
+          </div>}
+
       <footer className="bg-transparent justify-center absolute text-zinc-400 font-light uppercase tracking-widest text-xs md:text-sm bottom-0 p-5 flex mx-auto max-w-7xl w-full z-20">
         <p> All rights reserved <a className="text-zinc-500 cursor-pointer ">Kurt Reti</a></p>
       </footer>

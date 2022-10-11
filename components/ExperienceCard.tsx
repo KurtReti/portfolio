@@ -3,9 +3,13 @@ import {motion} from 'framer-motion'
 
 type Props = {}
 
-export default function ExperienceCard({}: Props) {
+
+//TODO: replace dummy info with prop information for experience
+
+
+export default function ExperienceCard({dot_point1, dot_point2, dot_point3, dot_point4, title, subtitle, img, year}) {
   return (
-    <article className='h-[500px] opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden snap-center p-10 bg-zinc-800 flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 w-[420px] md:w-[600px] xl:w-[800px]'>
+    <article className='h-[600px] hover:text-white  opacity-40 hover:opacity-100 cursor-pointer border border-white transition-opacity duration-200 overflow-hidden snap-center p-10 bg-transparent flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 w-[360px] md:w-[600px] xl:w-[800px]'>
     <motion.img 
 
     initial={{
@@ -27,25 +31,28 @@ export default function ExperienceCard({}: Props) {
     }}
 
     className="h-24 w-24 rounded-full object-cover object-center" 
-    src="https://cdn.discordapp.com/attachments/216749490747473921/1024626312117239829/Screen_Shot_2022-09-28_at_8.18.48_pm.png" alt="" >
+    src={img} alt="" >
     </motion.img>
     <div>
     <h4 className='text-4xl font-light'>
-        University of Wollongong
+        {title}
     </h4>
-    <p className='text-2xl font-bold mt-1'>
-        Bachelor of Computer Science 
+    <p className='uppercase text-2xl font-light mt-1'>
+        {subtitle}
     </p>
     {/* <div className='flex space-x-2 my-2'>
 
     </div> */}
     <p className='uppercase py-4 text-zinc-500'>
-        2019-2022
+        {year}
     </p>
 
     <ul className='list-disc space-y-4 ml-5 text-md'>
-        <li>Major in Cybersecurity</li>
-        <li>Major in Software Engineering</li>
+        <li>{dot_point1}</li>
+        <li>{dot_point2}</li>
+        <li>{dot_point3}</li>
+        <li>{dot_point4}</li>
+  
   
     </ul>
     </div>

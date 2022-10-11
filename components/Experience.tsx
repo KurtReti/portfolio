@@ -24,12 +24,10 @@ export default function Experience({}: Props) {
       >
         Experience
       </motion.h3>
-
-      <div className="w-full space-x-5 flex overflow-x-scroll snap-x snap-mandatory">
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+      <div className="mt-20">
+      <ExperienceCard title="University of Wollongong" subtitle="bachelor of computer science" year="2019-2022" dot_point1="Major in Software Engineering" dot_point2="Major in Cybersecurity" dot_point3="UX/UI Design, HCI Principles, Networking, Problem Solving" dot_point4="Project Management, Agile Methodologies, Scrum" img="https://cdn.discordapp.com/attachments/216749490747473921/1024626312117239829/Screen_Shot_2022-09-28_at_8.18.48_pm.png"/>
       </div>
+
     </div>
   );
 }

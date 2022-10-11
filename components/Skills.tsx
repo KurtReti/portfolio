@@ -27,22 +27,23 @@ export default function Skills({}: Props) {
 
       <motion.div
       
-      className='flex flex-wrap w-full rounded-full md:w-1/2 gap-y-8 gap-4  justify-evenly '>
+      className='flex flex-wrap w-full rounded-full md:w-1/2 gap-y-8 gap-2 md:gap-4  justify-evenly '>
    
-        <Skill skill="react"proficiency="60"/>
-        <Skill skill="javascript"proficiency="24"/>
-        <Skill skill="html"proficiency="24"/>
-        <Skill skill="css"proficiency="24"/>
+        <Skill color="#61DBFB" skill="react"proficiency="60"/>
+        <Skill color="#F0DB4F" skill="javascript"proficiency="24"/>
+        <Skill color="#f06529" skill="html5"proficiency="24"/>
+        <Skill color="#2965f1" skill="css3"proficiency="24"/>
+
+        <Skill color="#563d7c" skill="bootstrap"proficiency="60"/>
+
+        <Skill color="#F1502F" skill="git"proficiency="24"/>
+        <Skill color="#cc6699" skill="sass"proficiency="24"/>
+        <Skill color="#5382a1" skill="java"proficiency="24"/>
  
-        <Skill skill="NEXT.JS"proficiency="24"/>
-        <Skill skill="NEXT.JS"proficiency="24"/>
-        <Skill skill="NEXT.JS"proficiency="24"/>
-        <Skill skill="NEXT.JS"proficiency="24"/>
- 
-        <Skill skill="NEXT.JS"proficiency="24"/>
-        <Skill skill="NEXT.JS"proficiency="24"/>
-        <Skill skill="NEXT.JS"proficiency="24"/>
-        <Skill skill="NEXT.JS"proficiency="24"/>
+        <Skill color="#FFD43B" skill="python"proficiency="24"/>
+        <Skill color="#8BC3FC" skill="photoshop"proficiency="24"/>
+        <Skill color="#f97434" skill="swift"proficiency="24"/>
+        <Skill color="#00758F" skill="mysql"proficiency="24"/>
 
       </motion.div>
  
