@@ -29,14 +29,16 @@ export default function Project({title, description, project_link, github_link, 
 
                 </div>
                 <div className='flex flex-col gap-2'>
-                
+                    
+                <Link href={project_link}>
                 <motion.button
                 whileHover={{
                     scale:1.1
                 }}
                 
+               
                 className='bg-red-400/50 text-md hover:opacity-100 rounded-md px-2 text-white  self-end'>View Project</motion.button>
-
+                </Link>
                 <Link href={github_link}>
                 <button className='self-end  text-sm text-zinc-500 hover:text-white hover:underline hover:underline-offset-4'>View Github Repo</button>
                 </Link>
