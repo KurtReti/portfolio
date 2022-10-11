@@ -55,7 +55,7 @@ export default function Contact({}) {
         Contact Me
       </motion.h3>        
         
-          <form className=" border-0 flex flex-col max-w-3xl max-h-[500px] mt-12 md:mt-0 backdrop-blur-sm md:border bg-zinc-900 w-full md:w-4/6 h-4/5 relative z-10 border-white px-12 py-8 " method="post" onSubmit={handleOnSubmit}>
+          <form className=" border-0 flex flex-col max-w-3xl max-h-[500px] backdrop-blur-sm md:border bg-zinc-900 w-full md:w-4/6 h-4/5 relative z-10 border-white px-12 py-8 " method="post" onSubmit={handleOnSubmit}>
             <div className="w-full justify-start flex flex-col md:flex-row md:space-y-0 md:space-x-4">
               <p className='flex flex-col mb-2 md:w-1/2'>
                 <label className="uppercase font-light tracking-widest " htmlFor="name">Subject</label>
@@ -67,7 +67,7 @@ export default function Contact({}) {
               </p>
             </div>
             <div className="flex align space-y-4 md:space-y-0 flex-col  mt-4">
-              <label className="self-start uppercase font-light mb-4 tracking-widest" htmlFor="message">Message</label>
+              <label className="self-start uppercase font-light mb-0 md:mb-4 tracking-widest" htmlFor="message">Message</label>
               <textarea className="px-2 py-2 text-sm bg-transparent font-light border  border-white w-full h-80 md:h-48 " name="message" required />
        
             </div>
@@ -78,7 +78,7 @@ export default function Contact({}) {
                 scaleX: 0.95
             }}
 
-            disabled={isSubmitting} className="border h-8 mt-8 w-1/2 self-center border-white px-4 py-1 uppercase font-light"
+            disabled={isSubmitting} className="border h-8 mt-4 md:mt-8 w-1/2 self-center border-white px-4 py-1 uppercase font-light"
             
             onClick={showAlert}>
               Submit
