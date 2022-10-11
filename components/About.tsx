@@ -63,12 +63,7 @@ export default function About({}: Props) {
           A bit about <span className="font-bold text-red-400 opacity-60">me</span>
         </h4>
         <p className="text-sm text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-          voluptates culpa a quidem omnis libero eius? Eius ut, nesciunt aliquid
-          similique nemo veritatis veniam repellendus maxime ipsa perspiciatis
-          blanditiis alias perferendis fugiat voluptatum iusto aut dicta atque
-          consequuntur facere accusantium velit? Velit cupiditate, aliquam vero
-          sequi beatae asperiores architecto sunt!
+          Hi, I&#39;m Kurt. I love to make things. Websites, apps, food, conversation. I enjoy the creative process from start to finish. As much as I like making food, I like building websites more. I live in Wollongong, just south of Sydney, and I&#39;ve just finished my bachelors in computer science at the University of Wollongong. I&#39;ve been working on my front end skills ever since, learning about the industry preferred tools that they dont teach you about at Uni, libraries like React and Next.js. I&#39;ve been practicing these new skills by building sites for my friends and myself, from the design stage to the implementation, debugging and final deployment. You can check out some of my work below and find out a bit more about me. If you want to get in touch drop me a message in the contact section at the bottom, I would love to hear from you.
         </p>
       </motion.div>
     </div>

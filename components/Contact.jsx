@@ -68,7 +68,7 @@ export default function Contact({}) {
             </div>
             <div className="flex  align space-y-4 md:space-y-0 flex-col  mt-4">
               <label className="self-start uppercase font-light mb-0 md:mb-4 tracking-widest" htmlFor="message">Message</label>
-              <textarea className="px-2 py-2 self-center text-sm bg-transparent font-light border  border-white w-[300px] h-80 md:h-48 " name="message" required />
+              <textarea className="px-2 py-2 self-center text-sm bg-transparent font-light border  border-white w-[300px] md:w-full h-80 md:h-48 " name="message" required />
        
             </div>
             <motion.button
