@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Projects({}: Props) {
   return (
-    <div className="h-screen bg-zinc-900 mb-20 flex flex-col overflow-scroll   relative text-left md:flex-row max-w-full px-10 justify-evenly    items-center">
+    <div className="h-screen bg-zinc-900 flex flex-col   relative text-left md:flex-row max-w-full px-10 justify-evenly    items-center">
       <motion.h3
         initial={{
           opacity: 0,
@@ -26,7 +26,7 @@ export default function Projects({}: Props) {
         Projects
       </motion.h3>
 
-      <div className="flex w-full h-2/3 items-center justify-center flex-row flex-wrap space-y-4  gap-24">
+      <div className="flex w-full overflow-scroll h-2/3 items-center justify-center flex-row flex-wrap space-y-4  gap-24">
 
 
 

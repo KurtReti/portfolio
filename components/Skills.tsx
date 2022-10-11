@@ -27,7 +27,7 @@ export default function Skills({}: Props) {
 
       <motion.div
       
-      className='flex flex-wrap w-full rounded-full md:w-1/2 gap-y-8 gap-2 md:gap-4  justify-evenly '>
+      className='flex flex-wrap w-full rounded-full md:w-1/2 gap-y-0 gap-0 md:gap-4  justify-evenly '>
    
         <Skill color="#61DBFB" skill="react"proficiency="60"/>
         <Skill color="#F0DB4F" skill="javascript"proficiency="24"/>

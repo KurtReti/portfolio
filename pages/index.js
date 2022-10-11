@@ -13,14 +13,16 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
+    
     <div className="font-Josefin md:scrollbar md:scrollbar-track-transparent md:scrollbar-thumb-red-400/50 bg-zinc-900 text-zinc-400 h-screen snap-y snap-mandatory scroll-smooth overflow-visible z-0">
+      <Header />
       <Head>
         <title>Kurt Reti</title>={" "}
         <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/216749490747473921/1028578997640118314/Screen_Shot_2022-10-09_at_7.05.19_pm.png" />
       </Head>
       {/* Header */}
 
-      <Header />
+      
 
       {/* Hero */}
 

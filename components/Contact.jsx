@@ -50,12 +50,12 @@ export default function Contact({}) {
         viewport={{
             once: true
         }}
-        className="absolute top-28 text-zinc-400 z-10 uppercase tracking-[20px]"
+        className="absolute top-16 text-zinc-400 z-10 uppercase tracking-[20px]"
       >
         Contact Me
       </motion.h3>        
         
-          <form className=" flex flex-col mt-12 md:mt-0 backdrop-blur-sm border bg-zinc-900 w-full md:w-4/6  relative z-10 border-white px-12 py-8 " method="post" onSubmit={handleOnSubmit}>
+          <form className=" border-0 flex flex-col max-w-3xl max-h-[500px] mt-12 md:mt-0 backdrop-blur-sm md:border bg-zinc-900 w-full md:w-4/6 h-4/5 relative z-10 border-white px-12 py-8 " method="post" onSubmit={handleOnSubmit}>
             <div className="w-full justify-start flex flex-col md:flex-row md:space-y-0 md:space-x-4">
               <p className='flex flex-col mb-2 md:w-1/2'>
                 <label className="uppercase font-light tracking-widest " htmlFor="name">Subject</label>
