@@ -1,24 +1,25 @@
-import React from 'react'
-import {motion} from 'framer-motion'
-type Props = {}
+import React from "react";
+import { motion } from "framer-motion";
+type Props = {};
 
 export default function Background({}: Props) {
   return (
     <motion.div
-    initial={{
+      initial={{
         scale: 0,
         opacity: 0,
-    }}
-    animate={{
+      }}
+      animate={{
         scale: 1,
         opacity: 1,
-    }}
-    transition={{
+      }}
+      transition={{
         duration: 4,
-    }}
-    className='relative flex justify-center items-center'>
-        <div className='absolute z-0 bg-red-400 opacity-50 border-zinc-700 rounded-full h-[300px] w-[300px]' />
-        {/* <motion.p
+      }}
+      className="relative flex justify-center items-center"
+    >
+      <div className="absolute z-0 bg-red-400 opacity-50 border-zinc-700 rounded-full h-[300px] w-[300px]" />
+      {/* <motion.p
         initial={{
           scale: 1
         }}
@@ -32,5 +33,5 @@ export default function Background({}: Props) {
         
         className='absolute z-10 text-white text-9xl'>KR</motion.p> */}
     </motion.div>
-  )
+  );
 }
