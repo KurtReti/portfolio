@@ -5,7 +5,7 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className="h-screen bg-zinc-900 flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen flex bg-gradient-to-b from-mountain to-slate-900 flex-col relative text-center md:text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <motion.h3
         initial={{
           opacity: 0,
@@ -19,7 +19,7 @@ export default function About({}: Props) {
         viewport={{
           once: true,
         }}
-        className="absolute pl-4 md:pl-0 top-24 uppercase tracking-[20px]"
+        className="absolute pl-4 text-white md:pl-0 top-24 uppercase tracking-[20px]"
       >
         About
       </motion.h3>
@@ -38,10 +38,11 @@ export default function About({}: Props) {
         viewport={{
           once: true,
         }}
-        src="https://cdn.discordapp.com/attachments/870451033044815897/979575175366475806/F5F2D580-2EBB-4115-B28C-A6659AC7B8B7_1_105_c.jpeg"
+        src="https://cdn.discordapp.com/attachments/249813362806882304/1143504428884840448/1683108274948.jpeg"
         alt=""
-        className=" -mb-40 md:mb-0 h-36 w-36 md:h-64 md:w-64 rounded-full bg-cover"
+        className=" -mb-40 md:mb-0 h-36 w-36 md:h-64 md:w-64 rounded-full bg-cover "
       />
+
       <motion.div
         initial={{
           opacity: 0,
@@ -59,10 +60,10 @@ export default function About({}: Props) {
       >
         <h4 className="uppercase text-white tracking-widest">
           A bit about{" "}
-          <span className="font-bold text-red-400 opacity-60">me</span>
+          <span className="font-bold text-white opacity-60">me</span>
         </h4>
         <p className="text-sm text-justify">
-          Hi, I&#39;m Kurt. I love to make things. Websites, apps, food...
+          {/* Hi, I&#39;m Kurt. I love to make things. Websites, apps, food...
           anything. I just love the process of turning something from an idea
           into a real tangible thing. But as much as I like making food, I like
           building websites more. I live in Wollongong, just south of Sydney,
@@ -74,7 +75,7 @@ export default function About({}: Props) {
           myself, from the design stage to the implementation, debugging and
           final deployment. You can check out some of my work below and find out
           a bit more about me. If you want to get in touch drop me a message in
-          the contact section at the bottom, I would love to hear from you.
+          the contact section at the bottom, I would love to hear from you. */}
         </p>
       </motion.div>
     </div>

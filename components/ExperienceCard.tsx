@@ -16,7 +16,7 @@ export default function ExperienceCard({
   year,
 }) {
   return (
-    <article className="h-[600px] mt-10 text-white md:hover:text-white  md:opacity-40 hover:opacity-100 cursor-pointer border border-white transition-opacity duration-200 overflow-hidden snap-center p-10 bg-transparent flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 w-[360px] md:w-[600px] xl:w-[800px]">
+    <article className="h-[600px] mt-10 text-white md:hover:text-white  cursor-pointer border border-white transition-opacity duration-200 overflow-hidden snap-center p-10 bg-transparent flex flex-col items-center rounded-lg space-y-7 flex-shrink-0 w-[360px] md:w-[600px] xl:w-[800px]">
       <motion.img
         initial={{
           y: -100,
@@ -32,7 +32,7 @@ export default function ExperienceCard({
         viewport={{
           once: true,
         }}
-        className="h-24 w-24 rounded-full object-cover object-center"
+        className="h-24 w-24 rounded-full object-cover object-center mix-blend-lighten"
         src={img}
         alt=""
       ></motion.img>
@@ -42,7 +42,7 @@ export default function ExperienceCard({
         {/* <div className='flex space-x-2 my-2'>
 
     </div> */}
-        <p className="uppercase py-4 text-zinc-500">{year}</p>
+        <p className="uppercase py-4 text-white">{year}</p>
 
         <ul className="list-disc space-y-4 ml-5 text-md">
           <li>{dot_point1}</li>

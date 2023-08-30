@@ -2,12 +2,13 @@ import React from "react";
 import { motion, LayoutGroup } from "framer-motion";
 import Skill from "./Skill";
 import Project from "./Project";
+import ProjectNew from "./ProjectNew";
 
 type Props = {};
 
 export default function Projects({}: Props) {
   return (
-    <div className="h-screen bg-zinc-900 flex flex-col overflow-scroll  relative text-left md:flex-row max-w-full px-10 justify-evenly    items-center">
+    <div className="h-fit flex pt-24 bg-mountain flex-row relative text-left md:flex-row max-w-full justify-evenly    items-center">
       <motion.h3
         initial={{
           opacity: 0,
@@ -21,13 +22,13 @@ export default function Projects({}: Props) {
         viewport={{
           once: true,
         }}
-        className="absolute top-24 uppercase tracking-[20px]"
+        className="absolute top-0 text-white uppercase tracking-[20px]"
       >
         Projects
       </motion.h3>
 
-      <div className="flex w-full h-2/3 items-center justify-center flex-row flex-wrap space-y-4  gap-24">
-        <Project
+      <div className="flex w-full pt-20 h-2/3 items-center justify-center flex-row flex-wrap space-y-12  gap-24 scrollbar scrollbar-none">
+        <ProjectNew
           image="https://cdn.discordapp.com/attachments/249813362806882304/1140824543146016768/Screen_Shot_2023-08-15_at_11.48.22_am.png"
           title="wizard battle"
           description="A simple 2D fighting game I developed to learn the basics of HTML canvas and practice some further object oriented programming skills. This project is all built in vanilla javascript with minimal HTML and CSS being used. I had a lot of fun building this one and definitely learnt a lot about the fundamentals of javascript and how to use it to manipulate the DOM."
@@ -36,6 +37,7 @@ export default function Projects({}: Props) {
           skill1="javascript"
           skill2="html5"
           skill3="css3"
+          flipStatus={true}
         />
 
         <Project
@@ -47,9 +49,11 @@ export default function Projects({}: Props) {
           skill1="html5"
           skill2="bootstrap"
           skill3="python"
+          flipStatus={false}
+
         />
 
-        <Project
+        <ProjectNew
           image="https://cdn.discordapp.com/attachments/216749490747473921/1028545686045741127/hind.png"
           title="filmmaker portfolio"
           description="A portfolio website I designed for a filmmaker friend of mine to showcase his work. The site utilises React, implementing Next.js for server-side rendering. It is styled with tailwindcss and is fully responsive in its design to ensure that his work can be viewed by anyone at any time. The site utilises a number of react libraries such as framer motion, which are implemented seamlessly in the final design."
@@ -58,6 +62,8 @@ export default function Projects({}: Props) {
           skill1="react"
           skill2="css3"
           skill3="javascript"
+          flipStatus={true}
+
         />
 
         <Project
@@ -69,9 +75,11 @@ export default function Projects({}: Props) {
           skill1="javascript"
           skill2="css3"
           skill3="html5"
+          flipStatus={false}
+
         />
 
-        <Project
+        <ProjectNew
           image="https://media.discordapp.net/attachments/249813362806882304/1143501180216016896/Screen_Shot_2023-08-22_at_9.05.12_pm.png?width=1992&height=1228"
           title="Kurts Kitchen "
           description="An online recipe book I developed to practice my React skills. The recipes are pulled from the mealDB API and are displayed in a responsive list. "
@@ -80,6 +88,7 @@ export default function Projects({}: Props) {
           skill1="react"
           skill2="javascript"
           skill3="html5"
+          flipStatus={true}
         />
         
       </div>

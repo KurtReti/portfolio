@@ -6,13 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        mountain: "#08234B",
+      },
       fontFamily: {
-        "Josefin": ["Josefin Sans"],
+        Josefin: ["Josefin Sans"],
+        Victor: ["Victor Mono"],
       },
     },
-    
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-],
-}
+  plugins: [require("tailwind-scrollbar")],
+};

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useRef, useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import DevIcon from "devicon-react-svg";
 import Link from "next/link";
@@ -21,13 +21,14 @@ export default function ProjectNew({
     fill: "white",
     width: "24px",
   };
+
   const ref = useRef<HTMLImageElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0.3 1", "1.33 1"],
+    offset: ["0 1", "1.33 1"],
   });
 
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], ["-50", "0%"]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], ["50%", "0%"]);
 
   return (
     <motion.div
@@ -43,7 +44,7 @@ export default function ProjectNew({
         </h2>
         <p className=" text-sm ">{description}</p>
 
-        <div className="flex flex-row-reverse justify-between ">
+        <div className="flex flex-row justify-between ">
           <div className="flex gap-2 flex-row flex-wrap">
             <DevIcon icon={skill1} style={devIconStyle} viewBox="0 0 32 32" />
             <DevIcon icon={skill2} style={devIconStyle} viewBox="0 0 32 32" />
@@ -75,7 +76,6 @@ export default function ProjectNew({
           translateX: scaleProgress,
           opacity: scrollYProgress,
         }}
-
         viewport={{
           once: true,
         }}

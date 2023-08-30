@@ -33,7 +33,7 @@ export default function Contact({}) {
   }
 
   return (
-    <div className="h-screen bg-zinc-900 flex text-white flex-col relative text-center md:text-left md:flex-row  px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen flex text-white  bg-mountain flex-col relative text-center md:text-left md:flex-row  px-10 pt-24 justify-evenly mx-auto items-center">
       <motion.h3
         initial={{
           opacity: 0,
@@ -47,13 +47,13 @@ export default function Contact({}) {
         viewport={{
           once: true,
         }}
-        className="absolute top-16 text-zinc-400 z-10 uppercase tracking-[20px]"
+        className="absolute top-16 text-white z-10 uppercase tracking-[20px]"
       >
         Contact Me
       </motion.h3>
 
       <form
-        className=" border-0 flex flex-col max-w-3xl max-h-[500px] backdrop-blur-sm md:border bg-zinc-900 w-full md:w-4/6 h-4/5 relative z-10 border-white px-12 py-8 "
+        className=" border-0 flex flex-col max-w-3xl max-h-[500px] backdrop-blur-sm md:border w-full md:w-4/6 h-4/5 relative z-10 border-white px-12 py-8 "
         method="post"
         onSubmit={handleOnSubmit}
       >
@@ -115,7 +115,7 @@ export default function Contact({}) {
 
       {isSubmitting && isAlertVisible && (
         <div className="p-10 absolute z-50 bottom-12 md:bottom-32 ">
-          <div className="bg-zinc-900 px-4 py-2 text-sm md:text-lg font-light border border-white  text-white flex gap-4 flex-row md:flex-col">
+          <div className="bg-mountain px-4 py-2 text-sm md:text-lg font-light border border-white  text-white flex gap-4 flex-row md:flex-col">
             <p>Message submitted.</p>
             <p>I will be in touch soon!</p>
           </div>
@@ -126,7 +126,7 @@ export default function Contact({}) {
         <p>
           {" "}
           All rights reserved{" "}
-          <a className="text-zinc-500 cursor-pointer ">Kurt Reti</a>
+          <a className="text-white opacity-50 hover:opacity-100 transition-opacity ease-in-out cursor-pointer ">Kurt Reti</a>
         </p>
       </footer>
     </div>

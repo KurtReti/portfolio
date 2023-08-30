@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky  top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="fixed w-full self-center top-0 p-5 flex items-start justify-between mx-auto z-20 xl:items-center">
       <motion.div
         initial={{
           opacity: 0,
@@ -18,7 +18,7 @@ export default function Header({}: Props) {
         }}
         transition={{
           duration: 2,
-          delay: 3.5,
+          delay: 1,
         }}
         className="flex grayscale opacity-20 flex-row"
       >
@@ -50,7 +50,7 @@ export default function Header({}: Props) {
           }}
           transition={{
             duration: 2,
-            delay: 3.5,
+            delay: 1,
           }}
           className=" cursor-pointer hidden md:block tracking-tighter h-12 w-16"
           src="https://cdn.discordapp.com/attachments/216749490747473921/1024659158257127434/KR_1.png"
@@ -68,7 +68,7 @@ export default function Header({}: Props) {
           }}
           transition={{
             duration: 2,
-            delay: 3.5,
+            delay: 1,
           }}
           className="flex flex-row items-center cursor-pointer"
         >

@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Experience({}: Props) {
   return (
-    <div className="h-screen flex bg-zinc-900 flex-col overflow-hidden relative text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen bg-gradient-to-b from-slate-900 to-slate-900 flex flex-col overflow-hidden relative text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <motion.h3
         initial={{
           opacity: 0,
@@ -20,11 +20,11 @@ export default function Experience({}: Props) {
         viewport={{
           once: true,
         }}
-        className="absolute pl-4 md:pl-0 top-24 uppercase tracking-[20px]"
+        className="absolute pl-4 md:pl-0 top-24 text-white uppercase tracking-[20px]"
       >
         Experience
       </motion.h3>
-      <div className="mt-20">
+      <div className="mt-2 flex flex-row gap-24">
         <ExperienceCard
           title="University of Wollongong"
           subtitle="bachelor of computer science"

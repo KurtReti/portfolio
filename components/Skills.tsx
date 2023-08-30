@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Skills({}: Props) {
   return (
-    <div className="h-screen bg-zinc-900 flex flex-col overflow-hidden relative text-left md:flex-row max-w-full px-10 justify-evenly    items-center">
+    <div className="h-screen bg-gradient-to-b from-slate-900 to-mountain flex flex-col overflow-hidden relative text-left md:flex-row max-w-full px-10 justify-evenly    items-center">
       <motion.h3
         initial={{
           opacity: 0,
@@ -20,13 +20,13 @@ export default function Skills({}: Props) {
         viewport={{
           once: true,
         }}
-        className="absolute pl-4 md:pl-0 top-24 uppercase tracking-[20px]"
+        className="absolute pl-4 md:pl-0 text-white top-24 uppercase tracking-[20px]"
       >
         Skills
       </motion.h3>
 
       <motion.div className="flex flex-wrap w-full rounded-full md:w-1/2 gap-y-0 gap-0 md:gap-4  justify-evenly ">
-        <Skill color="#61DBFB" skill="react" proficiency="60" />
+        <Skill color="#dc2626" skill="react" proficiency="60" />
         <Skill color="#F0DB4F" skill="javascript" proficiency="24" />
         <Skill color="#f06529" skill="html5" proficiency="24" />
         <Skill color="#2965f1" skill="css3" proficiency="24" />
