@@ -63,28 +63,28 @@ export default function About({}: Props) {
           <span className="font-bold text-white opacity-60">me</span>
         </h4>
         <p className="text-sm text-justify">
-          Hey there! I'm <span className="opacity-100 text-white">Kurt</span>, and I'm all about bringing creativity to
-          life through front-end development. My journey began with a passion
-          for coding and design, which naturally led me to the world of crafting
-          user interfaces. My experience stems from my university days, where I
-          dipped my toes into full-stack development. Now, I'm geared up to dive
-          headfirst into the exciting world of professional front-end work. I've
-          had the pleasure of working with a bunch of front-end languages and
-          frameworks like React, Next.js, and even plain ol' JavaScript. What
-          really gets me excited is discovering new ways to make interfaces pop,
-          whether through hidden gems in documentation or the latest libraries.
-          Lately, I've been fascinated by generative AI technology, like the
-          eye-catching mountain image gracing the top of this page. It's this
-          kind of innovation that keeps my gears turning. Collaboration is my
-          jam. From wearing the designer hat to stepping into the role of a team
-          lead, I've done it all during my university team projects. Whether
-          it's docs, front-end, back-end, or the full stack, I'm in. When I'm
-          not coding, you'll find me glued to the digital realm, soaking in
-          seamless online experiences. Those aha moments inspire me to level up
-          my skills, all for the sake of crafting memorable digital adventures.
-          Join me on this genuine journey where I blend code and design to craft
-          front-end experiences that make a statement. Let's create something
-          awesome together!
+          Hey there! Im <span className="opacity-100 text-white">Kurt</span>,
+          and Im all about bringing creativity to life through front-end
+          development. My journey began with a passion for coding and design,
+          which naturally led me to the world of crafting user interfaces. My
+          experience stems from my university days, where I dipped my toes into
+          full-stack development. Now, Im geared up to dive headfirst into the
+          exciting world of professional front-end work. Ive had the pleasure of
+          working with a bunch of front-end languages and frameworks like React,
+          Next.js, and plain old JavaScript. What really gets me excited is
+          discovering new ways to make interfaces pop, whether through hidden
+          gems in documentation or the latest libraries. Lately, Ive been
+          fascinated by generative AI technology, like the eye-catching mountain
+          image gracing the top of this page. Its this kind of innovation that
+          keeps my gears turning. Collaboration is my jam. From wearing the
+          designer hat to stepping into the role of a team lead, Ive done it all
+          during my university team projects. Whether its docs, front-end,
+          back-end, or the full stack, Im in. When Im not coding, youll find me
+          glued to the digital realm, soaking in seamless online experiences.
+          Those aha moments inspire me to level up my skills, all for the sake
+          of crafting memorable digital adventures. Join me on this genuine
+          journey where I blend code and design to craft front-end experiences
+          that make a statement. Lets create something awesome together!
         </p>
       </motion.div>
     </div>
