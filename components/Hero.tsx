@@ -13,7 +13,7 @@ export default function Hero({}: Props) {
     offset: ["0.3 1", "1.33 1"],
   });
 
-  const scaleProgress = useTransform(scrollYProgress, [0, 0.8], ["50%", "-100%"]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 0.8], ["100%", "-70%"]);
  const opacityProgress = useTransform(scrollYProgress, [0, 1], ["100%", "0%"])
  const newScaleProgress = useTransform(scrollYProgress, [1, 2], ["0%", "100%"])
 
@@ -59,7 +59,7 @@ export default function Hero({}: Props) {
           translateY: scaleProgress
         }}
 
-        className="absolute z-20 bottom-0 md:object-cover md:top-40 object-center mix-blend-lighten"
+        className="absolute z-20 bottom-0 md:object-cover md:top-40 object-center mix-blend-lighten transparent bg-gradient-to-b from-mountain to-transparent"
         src="https://cdn.discordapp.com/attachments/866223582422368296/1146647724998008862/mountainV2.png"
         alt=""
         ref={ref}
