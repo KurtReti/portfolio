@@ -60,7 +60,7 @@ export default function Hero({}: Props) {
         }}
 
         className="absolute z-20 bottom-0 md:object-cover md:top-40 object-center mix-blend-lighten"
-        src="https://cdn.discordapp.com/attachments/249813362806882304/1146068390943916073/mountain.png"
+        src="https://cdn.discordapp.com/attachments/866223582422368296/1146647724998008862/mountainV2.png"
         alt=""
         ref={ref}
       />
